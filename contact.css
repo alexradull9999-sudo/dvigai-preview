@@ -1,0 +1,51 @@
+/* Contact popup and one consistent brand lockup. */
+.contact-card{min-width:0;background:var(--paper);border-radius:24px;padding:42px;box-shadow:0 15px 40px #1718160b;align-self:center}
+.contact-card-label{font-size:15px;font-weight:650;display:block;margin-bottom:28px}
+.contact-card h3{font-size:clamp(36px,3.8vw,56px);line-height:1.1;margin-bottom:26px}
+.contact-card>p{font-size:20px;line-height:1.6;margin-bottom:30px}
+.contact-card>.button{width:100%;gap:20px}
+.contact-channels{display:flex;gap:12px 20px;flex-wrap:wrap;margin-top:24px;font-size:15px;color:#606259}
+.contact-channels>span+span:before{content:'·';padding-right:20px}
+.contact-card.route-arrived{box-shadow:0 15px 40px #17181613}
+.footer-brand{display:inline-flex;align-items:center;gap:14px;flex-shrink:0;font-style:normal;letter-spacing:normal;line-height:1;color:var(--paper)}
+.footer-brand>.footer-wordmark{font-family:Manrope,Arial,sans-serif;font-style:normal;font-weight:800;font-size:64px;letter-spacing:-.11em;line-height:.96;transform:skew(-7deg);padding:0 .08em .06em 0;margin:0;color:inherit}
+.footer-brand>.footer-mark{width:42px;height:42px;fill:currentColor;flex-shrink:0;transform:rotate(-1deg)}
+.lead-dialog{width:min(590px,calc(100% - 32px));max-width:590px;padding:38px 40px 32px;border-radius:26px;max-height:calc(100dvh - 40px);overscroll-behavior:contain;scrollbar-gutter:stable;background:var(--paper)}
+.lead-dialog::backdrop{background:#171816b8;backdrop-filter:blur(8px)}
+.lead-dialog[open]{animation:lead-entrance .32s var(--ease) both}
+@keyframes lead-entrance{from{opacity:0;transform:translateY(22px) scale(.98)}to{opacity:1;transform:none}}
+.lead-dialog .dialog-close{top:16px;right:16px;border-radius:50%;font-size:30px;width:42px;height:42px;background:#e8e9e2}
+.lead-dialog-brand{display:flex;align-items:center;gap:14px;margin-bottom:25px;font-size:14px;font-weight:650;padding-right:48px}
+.lead-dialog-brand svg{width:22px;height:22px;fill:var(--ink)}
+.lead-dialog h2{font-size:49px;line-height:1.05;margin:0 0 19px;letter-spacing:-.065em}
+.lead-dialog #lead-intro{font-size:18px;line-height:1.55;margin-bottom:26px;max-width:35ch}
+.lead-context{border-left:3px solid var(--ink);background:var(--yellow);padding:10px 14px;font-size:15px!important;line-height:1.5!important;margin:0 0 22px;overflow-wrap:anywhere}
+.lead-fields{border:0;margin:0;padding:0;min-width:0}
+.field-label,.contact-methods legend{font-size:16px;font-weight:650;display:block;margin-bottom:9px}
+.field-label>span{font-size:13px;font-weight:500;color:#666962;margin-left:8px}
+.lead-dialog input[type="tel"],.lead-dialog input[type="text"]{width:100%;max-width:100%;border:1px solid #c8cbc1;border-radius:11px;background:#fff;padding:14px 16px;color:var(--ink);font-size:20px;line-height:1.45;box-shadow:none}
+.lead-dialog input::placeholder{color:#797d72}
+.lead-dialog .field-hint{font-size:13px;line-height:1.5;color:#65695f;margin-top:7px}
+.contact-methods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;border:0;padding:0;margin:23px 0;min-width:0}
+.contact-methods legend{float:none;padding:0 0 10px;margin:0}
+.contact-methods label{position:relative;display:block;cursor:pointer;min-width:0}
+.contact-methods input{position:absolute;inset:0;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+.contact-methods label>span{display:flex;align-items:center;justify-content:center;min-height:51px;padding:11px 6px;border:1px solid #c8cbc1;border-radius:10px;font-size:16px;font-weight:600;background:#fff;transition:background .2s,border-color .2s}
+.contact-methods input:checked+span{background:var(--yellow);border-color:var(--ink)}
+.contact-methods input:focus-visible+span{outline:3px solid #887d00;outline-offset:3px}
+.messenger-field{margin-bottom:25px}
+.lead-dialog .lead-submit{margin-top:8px;width:100%;gap:20px}
+.lead-submit .submit-label{font:inherit;width:auto;text-align:left;line-height:1.5}
+.lead-dialog .delivery-note{font-size:13px;line-height:1.55;color:#65695f;margin-top:16px}
+.lead-dialog .lead-error{color:#a52d20;font-size:16px;margin:16px 0}
+.lead-review h3{font-size:31px;line-height:1.15;margin:15px 0}
+.lead-review>p{font-size:17px;line-height:1.6}
+#lead-summary{margin:25px 0;padding:22px;background:#eaeae4;border-radius:16px}
+#lead-summary>div+div{margin-top:17px}
+#lead-summary dt{font-size:13px;color:#65695f;margin-bottom:3px}
+#lead-summary dd{font-size:18px;line-height:1.5;margin:0;overflow-wrap:anywhere}
+.review-actions{display:grid;gap:18px}.review-actions .button{width:100%;margin:0}.review-actions .text-link{justify-self:center}
+@media(max-width:1050px){.contact-card{padding:30px}.contact-card>p{font-size:19px}.footer-brand>.footer-wordmark{font-size:56px}.footer-brand>.footer-mark{width:37px;height:37px}.footer-brand{gap:11px}}
+@media(max-width:760px){.contact-card{padding:28px 24px;margin-top:48px;border-radius:20px}.contact-card h3{font-size:39px}.contact-card>p{font-size:18px}.contact-card-label{font-size:14px;margin-bottom:22px}.contact-channels{font-size:14px;gap:12px}.contact-channels>span+span:before{padding-right:12px}.footer-brand>.footer-wordmark{font-size:62px}.footer-brand>.footer-mark{width:42px;height:42px}.lead-dialog{padding:31px 25px 27px;width:calc(100% - 24px);max-height:calc(100dvh - 24px);border-radius:22px}.lead-dialog h2{font-size:43px;margin-bottom:18px}.lead-dialog-brand{margin-bottom:24px;font-size:13px}.lead-dialog #lead-intro{font-size:17px;margin-bottom:23px}.lead-dialog input[type="tel"],.lead-dialog input[type="text"]{font-size:18px;padding:13px 14px}.lead-dialog .dialog-close{top:13px;right:13px;width:38px;height:38px}.contact-methods{gap:7px}.contact-methods label>span{font-size:14px;padding:10px 4px;min-height:48px}.field-label,.contact-methods legend{font-size:15px}.lead-dialog .field-hint,.lead-dialog .delivery-note{font-size:12px}.field-label>span{font-size:12px;margin-left:5px}.lead-dialog .button{font-size:16px;min-height:54px;padding:14px 18px}.lead-review h3{font-size:29px}}
+@media(max-width:360px){.contact-card{padding:25px 20px}.contact-card h3{font-size:34px}.contact-card .button{font-size:15px;padding:15px 17px}.lead-dialog{padding:28px 20px 24px}.lead-dialog h2{font-size:37px}.lead-dialog-brand{font-size:12px;gap:10px}.contact-methods{gap:5px}.contact-methods label>span{font-size:13px}.field-label>span{display:block;margin-left:0;margin-top:2px}.footer-brand>.footer-wordmark{font-size:56px}.footer-brand>.footer-mark{width:37px;height:37px}}
+@media(prefers-reduced-motion:reduce){.lead-dialog[open]{animation:none}}

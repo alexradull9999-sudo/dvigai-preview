@@ -1,0 +1,17 @@
+/* The selected Trajectory silhouette: open loop and outgoing ribbon. */
+.hero-brand{gap:3%}
+.wordmark{font-size:clamp(60px,20vw,330px);font-style:normal;letter-spacing:-.095em;transform:none;padding:0 0 .04em;min-width:0}
+.brand-mark-wrap{order:-1;flex:0 0 25%;width:25%;max-width:none;aspect-ratio:560/310;margin:0;align-self:center}
+.brand-mark{width:100%;height:auto;overflow:visible}
+#main>.motion-stage>.stage-arrow{width:34%;max-width:470px;top:34%;right:3%;height:auto}
+.b2b-mark{width:145px;height:auto}
+.footer-brand{display:inline-flex;align-items:center;gap:18px;font-style:normal;letter-spacing:-.095em}
+.footer-mark{order:-1;display:block;width:78px;height:auto;fill:var(--yellow);flex-shrink:0}
+@media(max-width:760px){
+  .hero-brand{gap:3%;padding-bottom:16px}
+  .wordmark{font-size:20vw}
+  .brand-mark-wrap{width:25%;margin:0}
+  #main>.motion-stage>.stage-arrow{width:40%;top:53%;right:0}
+  .footer-brand{font-size:46px;gap:14px}
+  .footer-mark{width:68px}
+}

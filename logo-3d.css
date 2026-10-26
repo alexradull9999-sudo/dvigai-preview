@@ -1,0 +1,16 @@
+/* One lit scene for the wordmark and arrow; HTML/SVG remain the complete fallback. */
+[data-logo-3d]{overflow:visible}
+.logo-3d-canvas{position:absolute;left:-5%;top:-20%;display:block;width:110%;max-width:none;height:140%;opacity:0;pointer-events:none;filter:drop-shadow(3px 8px 7px #17181612)}
+.logo-3d-ready .logo-3d-canvas{opacity:1}
+.logo-3d-ready>.wordmark,.logo-3d-ready>.brand-mark-wrap{visibility:hidden}
+@media(prefers-reduced-motion:reduce){.logo-3d-canvas{transition:none}}
+.logo-3d-hit{position:absolute;z-index:3;min-width:44px;min-height:44px;background:none;border:0;border-radius:14px;padding:0;cursor:grab;touch-action:pan-y pinch-zoom;user-select:none;-webkit-tap-highlight-color:transparent}
+.logo-3d-hit:active,.logo-3d-hit[data-dragging]{cursor:grabbing}
+.logo-3d-hit:focus-visible{outline:2px solid var(--ink);outline-offset:6px;background:#f4ed6910}
+.logo-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 4px;color:#65665e;font-size:14px;line-height:1.5;position:relative;z-index:3}
+.logo-controls-hint{display:flex;align-items:center;gap:8px}
+.logo-controls-hint:before{content:'↔';font-size:21px;line-height:1;color:var(--ink)}
+.logo-reset{border:0;border-bottom:1px solid #b4b5ab;border-radius:0;background:none;color:var(--ink);font:inherit;white-space:nowrap;padding:10px 0;cursor:pointer}
+.logo-reset:hover{border-color:var(--ink)}
+.logo-reset:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+@media(max-width:760px){.logo-controls{font-size:12px;gap:8px;margin-top:2px}.logo-controls-hint{max-width:24ch;line-height:1.35}.logo-3d-canvas{filter:drop-shadow(1px 3px 3px #17181612)}}
